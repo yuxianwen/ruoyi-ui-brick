@@ -1,0 +1,441 @@
+/*
+    css 常用库
+*/
+.dib {
+  display: inline-block;
+}
+.db {
+  display: block;
+}
+
+.vm {
+  vertical-align: middle;
+}
+
+.ellipsis {
+  display: inline-block;
+  vertical-align: middle;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.w200 {
+  width: 200px;
+}
+
+// width
+
+// font-size
+.f12 {
+  font-size: 12px;
+}
+
+.f14 {
+  font-size: 14px;
+}
+.f16 {
+  font-size: 16px;
+}
+.f18 {
+  font-size: 18px;
+}
+.f20 {
+  font-size: 40px;
+}
+.f26 {
+  font-size: 26px;
+}
+.f36 {
+  font-size: 36px;
+}
+.b {
+  font-weight: bold;
+}
+.font-weight-500 {
+  font-weight: 500;
+}
+
+.divider {
+  height: 1px;
+  background-color: #d8d8d8;
+}
+
+// flex
+.d-flex {
+  display: flex;
+}
+
+.flex {
+  &-column {
+    flex-direction: column;
+  }
+  &-row {
+    flex-direction: row;
+  }
+  &-grow-1 {
+    flex-grow: 1;
+  }
+  &-wrap {
+    flex-wrap: wrap;
+  }
+  &-1 {
+    flex: 1;
+  }
+}
+.justify- {
+  &between {
+    justify-content: space-between;
+  }
+  &around {
+    justify-content: space-around;
+  }
+  &center {
+    justify-content: center;
+  }
+  &end {
+    justify-content: flex-end;
+  }
+}
+.align- {
+  &baseline {
+    align-items: baseline;
+  }
+  &start {
+    align-items: start;
+  }
+  &center {
+    align-items: center;
+  }
+  &end {
+    align-items: flex-end;
+  }
+}
+
+.flex {
+  &-grow-1 {
+    flex-grow: 1;
+  }
+}
+
+.wn {
+  white-space: nowrap;
+}
+
+// end flex -
+/* #endif */
+
+// margin-left
+@for $i from 1 through 5 {
+  .ml-#{$i} {
+    margin-left: 4px * $i;
+  }
+}
+// margin-right
+@for $i from 1 through 5 {
+  .mr-#{$i} {
+    margin-right: 4px * $i;
+  }
+}
+
+// margin-top
+@for $i from 1 through 5 {
+  .mt-#{$i} {
+    margin-top: 4px * $i;
+  }
+}
+
+@for $i from 1 through 10 {
+  .mt-n#{$i} {
+    margin-top: -4px * $i;
+  }
+}
+// margin-bottom
+@for $i from 0 through 10 {
+  .mb-#{$i} {
+    margin-bottom: 4px * $i;
+  }
+}
+// margin-left margin-right
+@for $i from 0 through 10 {
+  .mx-#{$i} {
+    margin-left: 4px * $i;
+    margin-right: 4px * $i;
+  }
+}
+@for $i from 0 through 10 {
+  .ma-#{$i} {
+    margin: 4px * $i;
+  }
+}
+// padding-top
+@for $i from 1 through 5 {
+  .pt-#{$i} {
+    padding-top: 4px * $i;
+  }
+}
+// padding-bottom
+@for $i from 1 through 5 {
+  .pb-#{$i} {
+    padding-bottom: 4px * $i;
+  }
+}
+
+// padding-left
+@for $i from 1 through 5 {
+  .pl-#{$i} {
+    padding-left: 4px * $i;
+  }
+}
+
+// padding-right
+@for $i from 1 through 5 {
+  .pr-#{$i} {
+    padding-right: 4px * $i;
+  }
+}
+
+// padding
+@for $i from 1 through 5 {
+  .pa-#{$i} {
+    padding: 4px * $i;
+  }
+}
+
+// padding-x
+@for $i from 1 through 5 {
+  .px-#{$i} {
+    padding-left: 4px * $i;
+    padding-right: 4px * $i;
+  }
+}
+// padding-y
+@for $i from 1 through 5 {
+  .py-#{$i} {
+    padding-top: 4px * $i;
+    padding-bottom: 4px * $i;
+  }
+}
+
+// --- end padding
+
+// padding
+// .p30
+// 	padding 30px
+// .p40
+// 	padding 40px
+// .pl20
+// 	padding-left 20px
+// .pr20
+// 	padding-right 20px
+// --- end padding
+
+//  align
+.tc {
+  text-align: center;
+}
+.tr {
+  text-align: right;
+}
+// end align
+
+.radius-top-40 {
+  border-radius: 20px 20px 0 0;
+}
+.radius-40 {
+  border-radius: 80px;
+}
+.radius-btn {
+  border-radius: 80px;
+  height: 70px;
+  background-color: #f1f1f1;
+}
+.fh {
+  font-size: inherit;
+}
+// height
+.full-width {
+  width: 100%;
+}
+.half-width {
+  width: 50%;
+}
+.h-0-5 {
+  height: 0.5px;
+}
+.b0 {
+  bottom: 0;
+}
+.l0 {
+  left: 0;
+}
+.r0 {
+  right: 0;
+}
+// .height-
+// 	&full
+// 		height 100%
+
+.ovh {
+  overflow: hidden;
+}
+
+// color
+.primary-text {
+  color: #1890ff;
+}
+.success-text {
+  color: #4cd964;
+}
+.red {
+  color: #fd6565;
+}
+.white {
+  color: white;
+}
+.g9 {
+  color: #999;
+}
+.g6 {
+  color: #666;
+}
+.g0 {
+  color: #000;
+}
+.gc {
+  color: #ccc;
+}
+// --- end color ---
+
+// bg-color
+.bg-white {
+  background-color: white;
+}
+.bg-primary {
+  background-color: #ff9d00;
+}
+.bg-d8 {
+  background-color: rgba(216, 216, 216, 0.57);
+}
+.bg-page {
+  background-color: #f5f7fa;
+}
+// --- end bg-color
+
+// input
+.input-round,
+.button-round {
+  height: 90px;
+  // border-radius: (@height / 2);
+  box-sizing: border-box;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.input-round {
+  padding-left: 45px;
+  // padding-right: @padding-left;Íß
+  background-color: white;
+}
+// end input
+
+.pr {
+  position: relative;
+}
+.pf {
+  position: fixed;
+}
+.abs {
+  position: absolute;
+}
+.linear-yellow-red {
+  background-image: linear-gradient(90deg, #ffa348, #fd6565);
+}
+.primary-boder-radius {
+  border: 1px solid #ffa348;
+  border-radius: 16px;
+}
+.line-clamp-1 {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 1; // 2行
+  word-break: break-all; // 换行
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+}
+.line-clamp-2 {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 2; // 2行
+  word-break: break-all; // 换行
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+}
+.z1 {
+  z-index: 1;
+}
+.bg-grey-circle {
+  border-radius: 50%;
+  background-color: #f6f7f9;
+}
+
+.trans {
+  transition: 0.3s;
+}
+.bb0 {
+  border-bottom: none !important;
+}
+.bb6 {
+  border-bottom: 1rpx solid #666;
+}
+.bbc {
+  border-bottom: 1rpx solid #ccc;
+}
+.btd {
+  border-top: 1rpx solid #ddd;
+}
+
+.beb {
+  border: 2px solid #ebebeb;
+}
+
+.border-box {
+  box-sizing: border-box;
+}
+
+.card {
+  background: #ffffff;
+  box-shadow: 0px 1px 4px 0px rgba(153, 153, 153, 0.49);
+  border-radius: 4px;
+}
+.bg-gray-radius {
+  background: #f0f0f0;
+  border-radius: 4px;
+}
+.text-wrapper-th {
+  padding: 6px 0 2px;
+  color: rgb(255, 255, 255);
+  font-size: 24px;
+  line-height: 40px;
+  white-space: nowrap;
+  background-color: rgb(255, 163, 72);
+  border-radius: 4px 4px 0px 0px;
+  left: 32px;
+  top: 40px;
+  .text_25 {
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.22);
+  }
+}
+
+.full-height-vh {
+  height: 100vh;
+}
+.list-cover {
+  width: 35px;
+  height: 35px;
+}
+
+.list-cover-mini {
+  width: 25px;
+  height: 25px;
+}
